@@ -29,6 +29,7 @@ public class ExecutorDeCalcule {
         Scanner sc1 = new Scanner(System.in);
         int j = sc1.nextInt();
         
+               
         System.out.println("Rezultatul este:");
         
         System.out.println("Adunare:");
