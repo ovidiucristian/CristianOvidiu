@@ -13,15 +13,11 @@ public class car {
 
     int getSpeed;
 
-    car(String mercedes, short s, Car.Color color) {
+    car(String mercedes, short s, Car.Color Color) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    void setRentPrice(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    void setSalePrice(int i) {
+    car() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -45,7 +41,7 @@ public class car {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    void decreaseSpeed() {
+    void increaseSpeed(String string) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -53,9 +49,14 @@ public class car {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    void increaseSpeed(String string) {
+    void setRentPrice(int i) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    void setSalePrice(int i) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public static class Car implements Saleable, Rentable{
  /**
  @enum enumeration of accepted car colors
@@ -147,17 +148,20 @@ public class car {
  /**
  Abstract method defined in Saleable interface implemented by class car
  * is implemented here.
+         * @return 
  * @override Saleable.getSalePrice() method
  */
- @Override
+      @Override
  public int getSalePrice(){
  return(salePrice);
  }
  /**
  Abstract method defined in Rentable interface implemented by class car
  * is implemented here.
+         * @return 
  * @override Rentable.getDailyRentPrice() method
  */
+        @Override
  public int getDailyRentPrice(){
  return(rentPrice);
  }
