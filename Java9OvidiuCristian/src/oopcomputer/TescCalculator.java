@@ -27,11 +27,14 @@ public class TescCalculator {
         calculator.buton3.apasa();
         calculator.buton2.apasa();
         calculator.buton1.apasa();
+        // Apasam butoane pana apare =
         calculator.butonEgal.apasa();
 
     // Apasam butoane pana apare =
     
     // cum afisam rezultatul? sa legam clasa buton de clasa ecran
+    
+    
     }
     
 }

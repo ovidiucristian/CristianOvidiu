@@ -12,14 +12,14 @@ public class ALU {
     private Integer operantUnu;
     private Integer operantDoi;
     private Integer rezultat;
-    private Character operand;
+    private Character operator;
 
     public Character getOperator() {
-        return operand;
+        return operator;
     }
 
     public void setOperator(Character operator) {
-        this.operand = operand;
+        this.operator = this.operator;
     }
 
     public Integer getOperantUnu() {
@@ -48,7 +48,7 @@ public class ALU {
 
       public void calculeaza() {
 
-        switch (operand) {
+        switch (operator) {
             case '+':
                 rezultat = operantUnu + operantDoi;
                 break;
