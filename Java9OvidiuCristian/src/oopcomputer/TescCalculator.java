@@ -3,7 +3,7 @@
  */
 package oopcomputer;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 /**
  *
@@ -30,7 +30,7 @@ public class TescCalculator {
         // Apasam butoane pana apare =
         calculator.butonEgal.apasa();
 
-    // Apasam butoane pana apare =
+   
     
     // cum afisam rezultatul? sa legam clasa buton de clasa ecran
     
