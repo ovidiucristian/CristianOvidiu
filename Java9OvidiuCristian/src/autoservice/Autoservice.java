@@ -71,25 +71,25 @@ public class Autoservice {
      */
     private static void displayAutoservice() {
         System.out.println("----------Autoservice----------");
-        System.out.println("First Car");
-        System.out.println("Car name" + m1.getName());
-        System.out.println("Car speed" + m1.getSpeed());
-        System.out.println("Car color" + m1.getColor());
-        System.out.println("Rentind price" + m1.getDailyRentPrice());
-        System.out.println("Sale Price" + m1.getSalePrice());
+        System.out.println("First Car: ");
+        System.out.println("Car name: " + m1.getName());
+        System.out.println("Car speed: " + m1.getSpeed());
+        System.out.println("Car color: " + m1.getColor());
+        System.out.println("Rentind price: " + m1.getDailyRentPrice());
+        System.out.println("Sale Price: " + m1.getSalePrice());
 
-        System.out.println("Second Car");
-        System.out.println("Car name" + m2.getName());
-        System.out.println("Car speed" + m2.getSpeed());
+        System.out.println("Second Car: ");
+        System.out.println("Car name: " + m2.getName());
+        System.out.println("Car speed: " + m2.getSpeed());
         System.out.println("Car color" + m2.getColor());
-        System.out.println("Rentind price" + m2.getDailyRentPrice());
+        System.out.println("Rentind price: " + m2.getDailyRentPrice());
         System.out.println("Sale Price" + m2.getSalePrice());
 
-        System.out.println("Second Car");
-        System.out.println("Car name" + m3.getName());
-        System.out.println("Car speed" + m3.getSpeed());
-        System.out.println("Car color" + m3.getColor());
-        System.out.println("Rentind price" + m3.getDailyRentPrice());
-        System.out.println("Sale Price" + m3.getSalePrice());
+        System.out.println("Second Car: ");
+        System.out.println("Car name: " + m3.getName());
+        System.out.println("Car speed: " + m3.getSpeed());
+        System.out.println("Car color: " + m3.getColor());
+        System.out.println("Rentind price: " + m3.getDailyRentPrice());
+        System.out.println("Sale Price: " + m3.getSalePrice());
     }
 }
