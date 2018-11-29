@@ -10,6 +10,8 @@ import static autoservice.Saleable.SALEABLE;
 
 public class Car implements Saleable, Rentable {
 
+
+
     /**
      * @enum enumeration of accepted car colors
      */
