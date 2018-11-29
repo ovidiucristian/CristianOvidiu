@@ -9,10 +9,11 @@ package oopcomputer;
  */
 public class ALU {
     
-    private Integer operantUnu;
-    private Integer operantDoi;
-    private Integer rezultat;
-    private Character operator;
+    private Integer operantUnu = 0;
+    private Integer operantDoi = 0;
+    private Integer rezultat = 0;
+    private Character operator = ' ';
+    char setOpertor;
 
     public Character getOperator() {
         return operator;
