@@ -11,9 +11,9 @@ import java.sql.*;
 public class JDBCExample {
     public static void main (String[] args)
     {
-        String user = "test";
-        String password = "test";
-        String url = "jdbc:derby://localhost:1527/firstdb;create=true";
+        String user = "ovidiu";
+        String password = "123";
+        String url = "jdbc:derby://localhost:1527/FirstDB;create=true";
         //String url = "jdbc:derby://localhost:1527/ebooksstore;create=true";
         //String url = "jdbc:derby:firstdb;create=true";
         //String driver = "org.apache.derby.jdbc.ClientDataSource40";
