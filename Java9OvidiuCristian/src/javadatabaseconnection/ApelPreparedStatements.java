@@ -23,9 +23,9 @@ public class ApelPreparedStatements {
         ResultSet resultSet = null;
         Statement statement = null;
         Connection connection = null;
-        String user = "test";
-        String password = "test";
-        String url = "jdbc:derby://localhost:1527/persoane;create=true";
+        String user = "ovidiu";
+        String password = "123";
+            String url = "jdbc:derby://localhost:1527/FirstDB;create=true";
         String driver = "org.apache.derby.jdbc.ClientDataSource40";
         try
         {
@@ -39,12 +39,12 @@ public class ApelPreparedStatements {
             connection.setAutoCommit(false);
             //insert a new person using prepared statements for persons, localitati and judete.
             // if an exception will occur excetion will be catched. If nor we make commit.
-            String cnpTest = "'1930323024563'";
-            String cnp = "1930323024563";
-            String codLocalitate = "20";
-            String codJudet = "20";
-            String denumireLocalitate = "FALTICENI";
-            String denumireJudet = "SUCEAVA";
+            String cnpTest = "'1930323024569'";
+            String cnp = "1930323024569";
+            String codLocalitate = "30";
+            String codJudet = "30";
+                String denumireLocalitate = "CUCUIETII DIN DEAL";
+            String denumireJudet = "VASLUI";
             statement = connection.createStatement();
             String query = "SELECT CNP FROM PERSOANE WHERE CNP="+cnpTest;
             resultSet = null;
@@ -159,9 +159,9 @@ public class ApelPreparedStatements {
      * @throws SQLException
      */
     public static void insertPersoana(String sCNP, String sNume, String sPrenume, String sVarsta, String sDomiciliul, String sCodLocalitate) throws SQLException {
-        String user = "test";
-        String password = "test";
-        String url = "jdbc:derby://localhost:1527/persoane;create=true";
+        String user = "ovidiu";
+        String password = "123";
+        String url = "jdbc:derby://localhost:1527/FirstDB;create=true";
         String driver = "org.apache.derby.jdbc.ClientDataSource40";
         Connection connection = null;
         Statement statement = null;
@@ -225,9 +225,9 @@ public class ApelPreparedStatements {
      * @throws SQLException
      */
     public static void insertLocalitate(String sCodLocalitate, String sDenumireLocalitate, String sCodJudet) throws SQLException {
-        String user = "test";
-        String password = "test";
-        String url = "jdbc:derby://localhost:1527/persoane;create=true";
+        String user = "ovidiu";
+        String password = "123";
+        String url = "jdbc:derby://localhost:1527/FirstDB;create=true";
         String driver = "org.apache.derby.jdbc.ClientDataSource40";
         Connection connection = null;
         Statement statement = null;

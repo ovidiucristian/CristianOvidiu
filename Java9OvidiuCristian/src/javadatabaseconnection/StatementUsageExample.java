@@ -17,8 +17,8 @@ import java.util.Locale;
 public class StatementUsageExample {
     public static void main (String[] args)
     {
-        String user = "test";
-        String password = "test";
+        String user = "ovidiu";
+        String password = "123";
         String url = "jdbc:derby://localhost:1527/persoane;create=true";
         //String url = "jdbc:derby:firstdb;create=true";
         String driver = "org.apache.derby.jdbc.ClientDataSource40";

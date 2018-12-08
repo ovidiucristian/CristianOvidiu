@@ -23,8 +23,8 @@ public class StoredProcedures {
      * @throws SQLException
      */    
     public static void insertJudet(String sCodJudet, String sDenumireJudet) throws SQLException {
-        String user = "test";
-        String password = "test";
+        String user = "ovidiu";
+        String password = "123";
         String url = "jdbc:derby://localhost:1527/persoane;create=true";
         String driver = "org.apache.derby.jdbc.ClientDataSource40";
         Connection connection = null;
