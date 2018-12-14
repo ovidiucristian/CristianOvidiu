@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Ecranul calculatorului
  */
 package oopcomputer;
 
@@ -11,73 +9,62 @@ package oopcomputer;
  */
 public class Ecran {
 
+    private String afisaj = "0";
+    private Carcasa stapana;
+    
     public Ecran(Carcasa nouaStapana) {
         this.stapana = nouaStapana;
     }
-
-    private String afisaj = "0";
-
-    private Carcasa stapana;
-
-
+    
     public String getAfisaj() {
         return afisaj;
     }
 
-    public void setAfisaj(String afisaj) {
-        switch (afisaj) {
+    public void setAfisaj(String noulAfisaj) {
+        
+        switch (noulAfisaj) {
             case "+":
                 operatiuneLocala('+');
                 break;
             case "-":
                 operatiuneLocala('-');
                 break;
-            case "/":
-                operatiuneLocala('/');
-                break;
             case "*":
                 operatiuneLocala('*');
-                break;
+                break;    
+            case "/":
+                operatiuneLocala('/');
+                break;    
             case "=":
-               
-                System.out.println(this.afisaj);
+                afisaj = noulAfisaj;
+                System.out.println(afisaj);
+                stapana.getAlu().calculeaza();
+                System.out.println(stapana.getAlu().getRezultat());
+                break;  
+            default:    
+                afisaj = afisaj + noulAfisaj;
+                int afisajInt = Integer.parseInt(afisaj);
+                int operandUnu = stapana.getAlu().getOperandUnu();
+                int operandDoi = stapana.getAlu().getOperandDoi();
                 
-                break;
-            default:
-                this.afisaj = this.afisaj + afisaj;
-                int operandUnu = stapana.getAlu().getOperantUnu();
-                int operandDoi = stapana.getAlu().getOperantDoi();
-                int afisajInt = Integer.parseInt(this.afisaj);
-                if (0 == operandUnu || ' ' == stapana.getAlu().getOperator()) {
-
-                    stapana.getAlu().setOperantUnu(afisajInt);
-                    System.out.println(this.afisaj);
-                } else if (0 == operandDoi) {
-                    stapana.getAlu().setOperantUnu(afisajInt);
-                    System.out.println(this.afisaj);
-
+                if(0 == operandUnu || ' ' == stapana.getAlu().getOperator()){
+                    stapana.getAlu().setOperandUnu(afisajInt);
+                    System.out.println(afisaj);
                 }
-                 {
-                    // if(stapana.getAlu().getOperantUnu() == '0')()
+                else if (0 == operandDoi){
+                    stapana.getAlu().setOperandDoi(afisajInt);
+                    System.out.println(afisaj);
+                    
                 }
-                this.afisaj = afisaj;
         }
-        /**
-         * private method for computation
-         *
-         *
-         */
-        /**
-         * private method for computation
-         *
-         * @param c
-         */
-        
     }
-       private void operatiuneLocala (char c){
-       // stapana.getAlu().setOperantUnu(Integer.getInteger(afisaj));
+    /**
+     * Private method for computation
+     */
+    private void operatiuneLocala(char c){
         stapana.getAlu().setOperator(c);
         afisaj = Character.toString(c);
-
+        System.out.println(afisaj);
+        afisaj="";
     }
 }

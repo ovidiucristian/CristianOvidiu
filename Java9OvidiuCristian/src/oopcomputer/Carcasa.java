@@ -9,7 +9,6 @@ package oopcomputer;
  */
 public class Carcasa {
     
-    
     private Ecran ecran = new Ecran(this);
 
     public Ecran getEcran() {
@@ -30,23 +29,9 @@ public class Carcasa {
     public Buton butonOri = new Buton('*',this);
     public Buton butonImpartire = new Buton('/',this);
     public Buton butonEgal = new Buton('=',this);
-    private ALU alu = new ALU();
+    private Alu alu = new Alu();    
 
-    public ALU getAlu() {
+    public Alu getAlu() {
         return alu;
     }
-    
-    /**
-     * Metoda simteButoane care simte cand s-a apasat un buton pe care il citeste
-     * si il da mai departe ecranului
-     */
-    
-    public void simteButoane(){
-        
-        
-    }
-   
-   
-    
-    
 }
