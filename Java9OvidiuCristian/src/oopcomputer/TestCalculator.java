@@ -20,7 +20,7 @@ public class TestCalculator {
         calculator.buton2.apasa();
         calculator.buton3.apasa();
         calculator.butonPlus.apasa();   
-        calculator.buton3.apasa();
+        calculator.buton3.apasa(); 
         calculator.buton2.apasa();
         calculator.buton1.apasa();
         // Apasam butoane pana apare =
