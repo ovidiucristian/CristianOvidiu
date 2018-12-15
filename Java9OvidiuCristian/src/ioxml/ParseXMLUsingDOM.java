@@ -25,7 +25,7 @@ public class ParseXMLUsingDOM {
    public static void main(String[] args){
 
       try {	
-         File inputFile = new File("C:\\Users\\gheor\\OneDrive\\Documents\\NetBeansProjects\\JavaTrainings\\JavaTraining\\src\\ioxml\\bookstore.xml");
+         File inputFile = new File("G:\\JavaNetBeans\\CristianOvidiu\\Java9OvidiuCristian\\src\\ioxml\\bookstore.xml");
          DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
          DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
          Document doc = dBuilder.parse(inputFile);
