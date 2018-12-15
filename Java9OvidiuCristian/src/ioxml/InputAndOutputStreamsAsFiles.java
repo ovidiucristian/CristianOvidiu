@@ -30,8 +30,8 @@ public class InputAndOutputStreamsAsFiles {
         FileOutputStream out= null;
         // create two streams, one for input and one for output
         try {
-                in = new FileInputStream("C:\\Users\\gheor\\OneDrive\\Documents\\NetBeansProjects\\JavaTrainings\\JavaTraining\\src\\ioxml\\in.txt");
-                out = new FileOutputStream("C:\\Users\\gheor\\OneDrive\\Documents\\NetBeansProjects\\JavaTrainings\\JavaTraining\\src\\ioxml\\out.txt");
+                in = new FileInputStream("G:\\JavaNetBeans\\CristianOvidiu\\Java9OvidiuCristian\\src\\ioxml\\in.txt");
+                out = new FileOutputStream("G:\\JavaNetBeans\\CristianOvidiu\\Java9OvidiuCristian\\src\\ioxml\\out.txt");
                 // create an int variable to be loaded from input file and to be written to output stream
                 int val;
                 // read the int value from input stream and write it to output stream
@@ -53,23 +53,23 @@ public class InputAndOutputStreamsAsFiles {
             }
         }
         // same code using decorators or wrappers;
-        InputStreamReader inWrapper = new InputStreamReader(new FileInputStream("C:\\Users\\gheor\\OneDrive\\Documents\\NetBeansProjects\\JavaTrainings\\JavaTraining\\src\\ioxml\\inwrapper.txt"));
-        OutputStreamWriter outWrapper = new OutputStreamWriter(new FileOutputStream("C:\\Users\\gheor\\OneDrive\\Documents\\NetBeansProjects\\JavaTrainings\\JavaTraining\\src\\ioxml\\outwrapper.txt"));
+        InputStreamReader inWrapper = new InputStreamReader(new FileInputStream("G:\\JavaNetBeans\\CristianOvidiu\\Java9OvidiuCristian\\src\\ioxml\\inwrapper.txt"));
+        OutputStreamWriter outWrapper = new OutputStreamWriter(new FileOutputStream("G:\\JavaNetBeans\\CristianOvidiu\\Java9OvidiuCristian\\src\\ioxml\\outwrapper.txt"));
         int inWrapperValue = inWrapper.read();
         outWrapper.write(inWrapperValue);
         System.out.println(inWrapperValue);
         inWrapper.close();
         outWrapper.close();
         // same code using buffered streams
-        BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\gheor\\OneDrive\\Documents\\NetBeansProjects\\JavaTrainings\\JavaTraining\\src\\ioxml\\bufferedIn.txt"));
-        BufferedWriter bw = new BufferedWriter(new FileWriter("C:\\Users\\gheor\\OneDrive\\Documents\\NetBeansProjects\\JavaTrainings\\JavaTraining\\src\\ioxml\\bufferedout.txt"));
+        BufferedReader br = new BufferedReader(new FileReader("G:\\JavaNetBeans\\CristianOvidiu\\Java9OvidiuCristian\\src\\ioxml\\bufferedIn.txt"));
+        BufferedWriter bw = new BufferedWriter(new FileWriter("G:\\JavaNetBeans\\CristianOvidiu\\Java9OvidiuCristian\\src\\ioxml\\bufferedout.txt"));
         int bufferedValue = br.read();
         System.out.println(bufferedValue);
         bw.write(bufferedValue);
         br.close();
         bw.close();
         // read content of a file using NIO (New IO) and channels
-        File file = new File("C:\\Users\\gheor\\OneDrive\\Documents\\NetBeansProjects\\JavaTrainings\\JavaTraining\\src\\ioxml\\in.txt");
+        File file = new File("G:\\JavaNetBeans\\CristianOvidiu\\Java9OvidiuCristian\\src\\ioxml\\in.txt");
         Path path = file.toPath();
         FileChannel fc = FileChannel.open(path);
         ByteBuffer buf = ByteBuffer.allocate(1024);
