@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author gheor
+ * @author Ovidiu
  */
 public class CarTest {
     
